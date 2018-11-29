@@ -1,0 +1,41 @@
+A股市场结构化风险模型（日尺度）
+测试版（CNE5因子）数据需求
+1，Beta
+252个交易日、半衰期为63的时间序列回归
+数据需求：股票池的个股收盘价（计算logReturn），股票池指数数据（或自己进行市值加权编制指数）
+
+2，Momentum
+数据需求：同1
+
+3，Size
+对数市值
+数据需求：个股市值数据
+
+4，Earnings Yield
+包括 EPIBS，ETOP，CETOP
+数据需求：E/P比（分析师预测），E/P比历史数据，Cash earnings-to-price ratio
+
+5，Residual Volatility
+包括 DASTD CMRA HSIGMA
+数据需求： 个股收益率数据， 无风险收益率，股票池市值加权指数数据
+
+6，Growth
+包括 SGRO EGRO EGIBS EGIBS_s
+数据需求：过去五年的公司销售额（sales per share），过去五年的盈利（earning per share）， 长期盈利增长预测（分析师）， 短期盈利增长预测（分析师）
+
+7，Book-to-Price
+BTOP
+数据需求：流通市值，book value
+
+8，Leverage
+MLEV，DTOA，BLEV
+数据需求：市值，优先股PE，长期负债的book value，总负债，总资产，所有者权益，优先股权益
+
+9，Liquidity
+STOM,STOQ,STOA
+数据需求：每个交易日的个股换手率
+
+10，Non-linear Size
+数据需求：个股市值
+
+
